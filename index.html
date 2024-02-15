@@ -1,2 +1,30 @@
-test
-berubah
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Konversi Suhu</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Konversi Suhu</h2>
+      <form action="#">
+        <label for="suhu">Masukkan Suhu:</label>
+        <input
+          type="number"
+          id="suhu"
+          name="suhu"
+          placeholder="Masukkan suhu..."
+        />
+        <select name="satuan" id="satuan">
+          <option value="celcius">Celcius</option>
+          <option value="fahrenheit">Fahrenheit</option>
+        </select>
+        <button type="submit">Konversi</button>
+      </form>
+      <div id="hasil-konversi"></div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
